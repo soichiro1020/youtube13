@@ -1,0 +1,630 @@
+html {
+  font-size: 20px;
+  font-family:'Arial Black','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','DIN Condensed','Arial Black',sans-serif,sans-serif;
+  background-color: rgb(219, 11, 11);
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+header h1 {
+  margin-left: 4rem;
+}
+
+header p {
+  font-size: 2rem;
+  flex-flow: column;
+  margin: 2rem auto 3rem 4rem;
+}
+
+.dot-text {
+  margin: 0 auto 0 8rem;
+  font-size: 4rem;
+  padding-top: .2em;
+  background-position: top left -19px;
+  background-repeat: repeat-x;
+  background-size: 1em .3em;
+  background-image: radial-gradient(.12em .12em at center center,white,white 100%,transparent);
+}
+
+header .point {
+  font-size: 4rem;
+}
+
+header .points {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto 0 4rem;
+}
+
+header .points .sub-points {
+  border: solid 2px white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+header .sub-point {
+  display: flex;
+}
+
+header img {
+  object-fit: cover;
+  width: 40%;
+  height: 40%;
+  margin: 5rem 2rem 0 auto;
+}
+
+.support {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button013 a {
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 5rem 10rem;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: rgb(219, 11, 11);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  z-index:0;
+  border-left: solid 5px black;
+}
+
+.button013 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: black;
+  transition: .3s;
+  left:0;
+}
+
+.button013 a:hover {
+  color: #FFF;
+}
+
+.button013 a:hover:before {
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+.page2 {
+  background-color: white;
+  text-align: center;
+  max-width: 100%;
+}
+
+.page2 h1 {
+  font-size: 2.5rem;
+  padding-top: 5rem;
+}
+
+.page2 .item {
+  font-size: 1.3rem;
+  border: solid 5px black;
+  padding: 3rem 3rem;
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page2 p {
+  font-size: 1.5rem;
+  margin-top: 8rem;
+}
+
+.page2 .emphasis {
+  font-size: 3rem;
+  margin: 1rem auto;
+  padding-bottom: 4rem;
+}
+
+
+
+.page3 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.page3 h1 {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+.features-content {
+  position: absolute;
+  display: flex;
+  margin: 4rem;
+  z-index: 11;
+}
+
+.images .background {
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  margin-left: 6rem;
+  z-index: 11;
+}
+
+.content {
+  background-color: white;
+  color: black;
+  width: 200%;
+  height: 60%;
+  font-size: 0.8rem;
+  margin: 2rem 5rem 2rem 10rem;
+  padding: 0
+}
+
+.main-background {
+ position: relative;
+ z-index: 10;
+ max-width: 40%;
+ margin: 5rem auto 0 0;
+}
+
+
+.features-content-second {
+  position: absolute;
+  display: flex;
+  margin: 4rem;
+  z-index: 11;
+}
+
+.images-second .background-second {
+  object-fit: cover;
+  width: 60%;
+  height: 60%;
+  margin-top: 8rem;
+  margin-right: 2rem;
+  z-index: 11;
+}
+
+.content-second {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 30%;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  margin-left: 6rem;
+  padding: 0;
+}
+
+.main-background-second {
+  position: relative;
+  z-index: 10;
+  max-width: 40%;
+  margin: 10rem auto 0 0;
+}
+
+.features-content-third {
+  position: absolute;
+  display: flex;
+  margin: 4rem;
+  z-index: 11;
+}
+
+.images-third .background-third {
+  object-fit: cover;
+  width: 70%;
+  height: 70%;
+  margin-top: 11rem;
+  margin-left: 5rem;
+  z-index: 11;
+}
+
+.content-third {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 60%;
+  font-size: 0.8rem;
+  margin: 1rem 6rem 0 0;
+  padding: 1rem;
+}
+
+.main-background-third {
+    position: relative;
+    z-index: 10;
+    max-width: 40%;
+    margin: 10rem auto 0 0;
+}
+
+
+.page4 {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.page4 h1 {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.page4 p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 4rem;
+}
+
+.graph {
+  display: flex;
+}
+
+.graph img {
+  margin-left: 5rem;
+}
+
+.page4 .button013 a {
+  margin: 4rem auto;
+  margin-bottom: 4rem;
+}
+
+
+.page5 {
+  color: white;
+}
+
+.page5 h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.arrow {
+  width: 15%;
+  
+}
+
+.arrow-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-contents p {
+  font-size: 2rem;
+}
+
+.reason-content {
+  display: flex;
+  justify-content: center;
+}
+
+.reason {
+  font-size: 1rem;
+  color: black;
+  display: inline-block;
+  background-color: white;
+  padding: 1.5rem;
+  position: relative;
+  line-height: 40px;
+  margin-left: 2rem;
+  }
+  
+  .reason:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left: 20px solid  white;
+  right: -40px;
+  }
+
+  .reason-contents {
+    color: black;
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto 4rem auto;
+    padding: 1.5rem;
+  }
+
+  .page5-end {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+
+
+  .page6 {
+    background-color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .page6 h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .youtube {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .youtube iframe {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+
+  .page7 {
+    color: white;
+    text-align: center;
+  }
+
+  .page7 h1 {
+    font-size: 2.5rem;
+  }
+
+  .page7 h2 {
+    margin-left: 5rem;
+  }
+
+  .step {
+    display: flex;
+  }
+
+  .decoration {
+    margin: 3rem;
+  }
+
+ .steps .page7-title {
+  writing-mode: vertical-rl;
+  margin-left: 6.7rem;
+  font-size: 2rem;
+}
+
+.step-content {
+  margin: 8rem auto;
+  font-size: 2rem;
+  border: solid 1px white;
+  padding: 1rem;
+}
+
+.step-content-second {
+  margin: 6rem auto;
+  font-size: 1rem;
+  border: solid 1px white;
+  padding: 4rem;
+}
+
+.steps .page7-title-second {
+  writing-mode: vertical-rl;
+  margin-left: 6rem;
+  font-size: 1.5rem;
+}
+
+.steps .page7-title-third {
+  writing-mode: vertical-rl;
+  margin-left: 6.7rem;
+  font-size: 2rem;
+}
+
+.step-content-third {
+  margin: 6rem auto;
+  font-size: 1.5rem;
+  border: solid 1px white;
+  padding: 4rem;
+}
+
+.step-content-fourth {
+  margin: 6rem auto;
+  font-size: 1.5rem;
+  border: solid 1px white;
+  padding: 4rem;
+}
+
+
+.page8 {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.page8 h1 {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+
+.question {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  width: 8%;
+  border-radius: 50%;
+  margin-left: 6rem;
+}
+
+.answer {
+  background-color: rgb(219, 11, 11);
+  color: white;
+  font-size: 2rem;
+  width: 8%;
+  border-radius: 50%;
+  margin-left: 6rem;
+}
+
+.question-sub {
+  font-size: 1.5rem;
+}
+
+.answer-sub {
+  font-size: 1.5rem;
+}
+
+.page8 .button013 a {
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6rem auto 5rem auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: rgb(219, 11, 11);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  z-index:0;
+  border-left: solid 5px black;
+}
+
+.page8 .button013 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: black;
+  transition: .3s;
+  left:0;
+}
+
+.button013 a:hover {
+  color: #FFF;
+}
+
+.button013 a:hover:before {
+  width: 100%;
+  z-index: -1;
+}
+
+.page9 {
+  color: white;
+  text-align: center;
+}
+
+.page9 h1 {
+  font-size: 2.5rem;
+}
+
+.page9 h2 {
+  font-size: 1.8rem;
+  background-color: white;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.consultant {
+  display: flex;
+}
+
+.consultant-human {
+  width: 60%;
+  height: 60%;
+}
+
+.president p {
+  text-align: left;
+  font-size: 1rem;
+  margin-right: 4rem;
+  width: 100%;
+  gap: 3;
+}
+
+
+.page10 {
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.page10 h1 {
+  padding-top: 5rem;
+}
+
+.Table {
+  width: 80%;
+  border: solid 2px #333;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .Table {
+    font-size: 12px;
+  }
+}
+.Table-Head {
+  background: white;
+}
+.Table-Head-Row-Cell {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.Table-Body {
+  background: #fff;
+}
+.Table-Body-Row-Cell {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  font-size: 0.8rem;
+}
